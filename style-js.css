@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+button:focus{
+  display: none;
+}
+
+.container {
+    display: flex;
+    padding: 150px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #999;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 5px;
+    text-align: center;
+    width: 600px;
+}
+
+.timer {
+  position: absolute;
+  top: 50px;
+  right: 250px;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.card:not(:last-child) {
+    margin-right: 20px;
+}
